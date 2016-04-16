@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView_Menu_Title"
+            style="@style/MyTitle"
+            android:text="@string/title" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar_Menu"
+            android:layout_width="@dimen/progress_size"
+            android:layout_height="@dimen/progress_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/scroll_padding"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/advert" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/scroll_padding">
+
+        <include
+            android:id="@+id/Layout_Buttons"
+            layout="@layout/buttons" />
+
+        <GridView
+            android:id="@+id/GridView_Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/Layout_Buttons"
+            android:layout_alignParentTop="true"
+            android:columnWidth="@dimen/grid_column_width"
+            android:horizontalSpacing="@dimen/scroll_padding"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="auto_fit"
+            android:soundEffectsEnabled="false"
+            android:verticalSpacing="@dimen/scroll_padding" />
+    </RelativeLayout>
+</LinearLayout>

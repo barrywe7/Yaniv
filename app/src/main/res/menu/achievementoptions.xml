@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/reset_achievements_menu_item"
+        android:icon="@drawable/ic_menu_revert"
+        android:title="@string/menu_item_reset_achievements" />
+    <item
+        android:id="@+id/reset_rating_menu_item"
+        android:icon="@drawable/ic_menu_revert"
+        android:title="@string/menu_item_reset_rating" />
+</menu>

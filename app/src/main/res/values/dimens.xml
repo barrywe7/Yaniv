@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!-- default dimensions file -->
+<resources>
+    <dimen name="title_size">42sp</dimen>
+    <dimen name="version_size">12sp</dimen>
+    <dimen name="version_spacing">5sp</dimen>
+    <dimen name="menu_item_size">20sp</dimen>
+    <dimen name="standard_text_size">16sp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="console_text_size">12sp</dimen>
+    <dimen name="trophy_height">60dp</dimen>
+    <dimen name="button_size">90dp</dimen>
+    <dimen name="avatar_size">70dp</dimen>
+    <dimen name="pic_size">90dp</dimen>
+    <dimen name="card_height">70dp</dimen>
+    <dimen name="card_width">80dp</dimen>
+    <dimen name="console_height">70dp</dimen>
+    <dimen name="scoreboard_height">50dp</dimen>
+    <dimen name="space_padding">5dp</dimen>
+    <dimen name="scroll_padding">10dp</dimen>
+    <dimen name="privacy_padding">20dp</dimen>
+    <dimen name="fading_edge">30dp</dimen>
+    <dimen name="bottom_padding">100dp</dimen>
+    <dimen name="email_dropdown">100dp</dimen>
+    <dimen name="progress_size">20dp</dimen>
+    <dimen name="progress_width">50dp</dimen>
+    <dimen name="progress_height">20dp</dimen>
+    <dimen name="radio_button_padding">50dp</dimen>
+    <dimen name="tab_height">60dp</dimen>
+    <dimen name="tab_margin">-5dp</dimen>
+    <dimen name="second_card">23dp</dimen>
+    <dimen name="third_card">46dp</dimen>
+    <dimen name="fourth_card">69dp</dimen>
+    <dimen name="fifth_card">92dp</dimen>
+    <dimen name="corner_radius">7dp</dimen>
+    <dimen name="achievement_height">90dp</dimen>
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="dialog_button_panel_size">54dp</dimen>
+    <dimen name="grid_column_width">180dp</dimen>
+    <dimen name="achievement_tab_padding">-10dp</dimen>
+    <dimen name="side_padding">0dp</dimen>
+    <dimen name="top_card_height">65dp</dimen>
+    <dimen name="compass_height">50dp</dimen>
+    <dimen name="top_box_width">70dp</dimen>
+</resources>

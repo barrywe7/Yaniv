@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdge="vertical"
+    android:fadingEdgeLength="@dimen/scroll_padding"
+    android:fillViewport="true"
+    android:padding="@dimen/space_padding">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_PrivacyPolicy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Opening"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_opening"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Subtitle_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_subtitle_1"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Text_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_text_1"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Subtitle_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_subtitle_2"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Text_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_text_2"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Subtitle_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_subtitle_3"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Text_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_text_3"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Subtitle_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_subtitle_4"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Text_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_text_4"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Subtitle_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_subtitle_5"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Text_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/privacy_padding"
+            android:text="@string/privacy_text_5"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/TextView_Privacy_Closing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="@string/privacy_closing"
+            android:textColorLink="@color/link_color"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+</ScrollView>

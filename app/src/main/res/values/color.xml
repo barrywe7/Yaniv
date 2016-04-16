@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="baize">#1D911F</color>
+    <color name="red">#FF0000</color>
+    <color name="link_color">#FFFF0F</color>
+    <color name="button_color">#ADD3ED</color>
+    <color name="almost_white">#EAEAEA</color>
+    <color name="orange">#FF9933</color>
+    <color name="deep_azure">#0066FF</color>
+    <color name="capri">#00BFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="light_grey">#AAA</color>
+    <color name="dark_grey">#444</color>
+</resources>

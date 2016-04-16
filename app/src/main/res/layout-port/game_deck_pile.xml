@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout_Deck_Pile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Deck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5.0">
+
+        <include
+            android:id="@+id/ImageView_Deck"
+            layout="@layout/card_image" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView_Compass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description_compass"
+        android:maxHeight="@dimen/compass_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/compass_south" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Pile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/side_padding"
+        android:layout_marginRight="@dimen/side_padding"
+        android:gravity="center_horizontal"
+        android:weightSum="5.0">
+
+        <include
+            android:id="@+id/ImageView_Pile1"
+            layout="@layout/card_image" />
+
+        <include
+            android:id="@+id/ImageView_Pile2"
+            layout="@layout/card_image" />
+
+        <include
+            android:id="@+id/ImageView_Pile3"
+            layout="@layout/card_image" />
+
+        <include
+            android:id="@+id/ImageView_Pile4"
+            layout="@layout/card_image" />
+
+        <include
+            android:id="@+id/ImageView_Pile5"
+            layout="@layout/card_image" />
+    </LinearLayout>
+</LinearLayout>

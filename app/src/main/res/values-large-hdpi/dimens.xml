@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Resource file for large hdpi used by Galaxy Tab 7.1 -->
+<resources>
+    <dimen name="title_size">50sp</dimen>
+    <dimen name="version_size">14sp</dimen>
+    <dimen name="version_spacing">8sp</dimen>
+    <dimen name="menu_item_size">28sp</dimen>
+    <dimen name="small_text_size">18sp</dimen>
+    <dimen name="standard_text_size">18sp</dimen>
+    <dimen name="console_text_size">16sp</dimen>
+    <dimen name="trophy_height">70dp</dimen>
+    <dimen name="button_size">200dp</dimen>
+    <dimen name="avatar_size">100dp</dimen>
+    <dimen name="pic_size">90dp</dimen>
+    <dimen name="card_height">150dp</dimen>
+    <dimen name="top_card_height">90dp</dimen>
+    <dimen name="card_width">60dp</dimen>
+    <dimen name="console_height">100dp</dimen>
+    <dimen name="scoreboard_height">70dp</dimen>
+    <dimen name="space_padding">7dp</dimen>
+    <dimen name="tab_height">70dp</dimen>
+    <dimen name="tab_margin">-10dp</dimen>
+    <dimen name="scroll_padding">20dp</dimen>
+    <dimen name="privacy_padding">30dp</dimen>
+    <dimen name="fading_edge">30dp</dimen>
+    <dimen name="bottom_padding">100dp</dimen>
+    <dimen name="email_dropdown">100dp</dimen>
+    <dimen name="progress_size">20dp</dimen>
+    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="achievement_height">120dp</dimen>
+    <dimen name="progress_width">55dp</dimen>
+    <dimen name="progress_height">25dp</dimen>
+    <dimen name="dialog_width">600dp</dimen>
+    <dimen name="dialog_button_panel_size">80dp</dimen>
+    <dimen name="second_card">40dp</dimen>
+    <dimen name="third_card">80dp</dimen>
+    <dimen name="fourth_card">120dp</dimen>
+    <dimen name="fifth_card">160dp</dimen>
+    <dimen name="grid_column_width">220dp</dimen>
+    <dimen name="achievement_tab_padding">-30dp</dimen>
+    <dimen name="compass_height">55dp</dimen>
+    <dimen name="top_box_width">75dp</dimen>
+</resources>

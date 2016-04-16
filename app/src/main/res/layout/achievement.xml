@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Achievements_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView_Achievements_Title"
+            style="@style/MyTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/achievements" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar_Achievements"
+            android:layout_width="@dimen/progress_size"
+            android:layout_height="@dimen/progress_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/scroll_padding"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout_Achievements"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/scroll_padding"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/Achievements_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView_Header_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player"
+                android:textColor="@color/yellow"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Header_Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rating"
+                android:textColor="@color/yellow"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Header_Played"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/achievements_played"
+                android:textColor="@color/yellow"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Header_Won"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/achievements_won"
+                android:textColor="@color/yellow"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Scoreboard_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView_Player_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxWidth="30dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/TextView_Player_Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/TextView_Player_Played"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/TextView_Player_Won"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+    <TabHost
+        android:id="@+id/TabHost1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/scroll_padding"
+        android:paddingRight="@dimen/scroll_padding">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:soundEffectsEnabled="false">
+
+                <GridView
+                    android:id="@+id/GridView_Achievements"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="@dimen/grid_column_width"
+                    android:gravity="top"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="auto_fit" />
+
+                <GridView
+                    android:id="@+id/GridView_AllScores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="@dimen/grid_column_width"
+                    android:gravity="top"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="auto_fit" />
+
+                <GridView
+                    android:id="@+id/GridView_FriendScores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="@dimen/grid_column_width"
+                    android:gravity="top"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="auto_fit" />
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

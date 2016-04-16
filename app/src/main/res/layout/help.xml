@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_HelpScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView_Help_Title"
+            style="@style/MyTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_item_help" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TextView_HelpText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:autoLink="all"
+        android:bufferType="spannable"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/fading_edge"
+        android:isScrollContainer="true"
+        android:linksClickable="true"
+        android:padding="@dimen/scroll_padding"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:textColorLink="@color/link_color"
+        android:textStyle="italic" />
+</LinearLayout>

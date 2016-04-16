@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:background="@drawable/gridview_background"
+    android:minHeight="@dimen/achievement_height"
+    android:padding="@dimen/space_padding">
+
+    <ImageView
+        android:id="@+id/ImageView_Trophy"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/trophy_height"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description_trophy"
+        android:gravity="top"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/TextView_TrophyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ImageView_Trophy"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView_TrophyDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_TrophyTitle"
+        android:layout_toRightOf="@id/ImageView_Trophy"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="italic" />
+</RelativeLayout>

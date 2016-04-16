@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NestedWeights">
+        <ignore path="res/layout/dialog.xml" />
+    </issue>
+    <issue id="PxUsage">
+        <ignore path="res/layout/yellow_line.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/friend_entry.xml" />
+    </issue>
+</lint>

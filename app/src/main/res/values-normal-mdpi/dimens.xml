@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="console_text_size">10sp</dimen>
+    <dimen name="card_height">75dp</dimen>
+    <dimen name="top_card_height">60dp</dimen>
+    <dimen name="card_width">45dp</dimen>
+    <dimen name="console_height">60dp</dimen>
+    <dimen name="progress_height">16dp</dimen>
+    <dimen name="progress_width">40dp</dimen>
+    <dimen name="side_padding">30dp</dimen>
+    <dimen name="compass_height">50dp</dimen>
+    <dimen name="top_box_width">60dp</dimen>
+</resources>

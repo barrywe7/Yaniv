@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_Main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_padding"
+    android:layout_marginTop="@dimen/space_padding"
+    android:layout_weight="1">
+
+    <ProgressBar
+        android:id="@+id/ProgressBar_Game"
+        android:layout_width="@dimen/progress_size"
+        android:layout_height="@dimen/progress_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/scroll_padding"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/FrameLayout_TopPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:maxHeight="@dimen/top_card_height"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:maxHeight="@dimen/top_card_height"
+            android:paddingLeft="@dimen/second_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:maxHeight="@dimen/top_card_height"
+            android:paddingLeft="@dimen/third_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:maxHeight="@dimen/top_card_height"
+            android:paddingLeft="@dimen/fourth_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:maxHeight="@dimen/top_card_height"
+            android:paddingLeft="@dimen/fifth_card"
+            android:scaleType="fitXY" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBarTop"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="@dimen/progress_height"
+            android:minWidth="@dimen/progress_width"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout_LeftPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_padding"
+        android:paddingBottom="@dimen/bottom_padding">
+
+        <ImageView
+            android:id="@+id/ImageView_LP1"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ImageView_LP2"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:paddingTop="@dimen/second_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ImageView_LP3"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:paddingTop="@dimen/third_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ImageView_LP4"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:paddingTop="@dimen/fourth_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ImageView_LP5"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:paddingTop="@dimen/fifth_card"
+            android:scaleType="fitXY" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBarLeft"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="@dimen/progress_height"
+            android:minWidth="@dimen/progress_width"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout_RightPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_padding"
+        android:paddingBottom="@dimen/bottom_padding">
+
+        <ImageView
+            android:id="@+id/ImageView_RP1"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ImageView_RP2"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:paddingTop="@dimen/second_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ImageView_RP3"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:paddingTop="@dimen/third_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ImageView_RP4"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:paddingTop="@dimen/fourth_card"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/ImageView_RP5"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_card"
+            android:paddingTop="@dimen/fifth_card"
+            android:scaleType="fitXY" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBarRight"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="@dimen/progress_height"
+            android:minWidth="@dimen/progress_width"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/space_padding"
+        android:background="@drawable/hand_value_shape"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextView_Hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hand"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/TextView_HandValue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/space_padding"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_BottomPlayer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/LinearLayout_Hand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/space_padding"
+        android:layout_marginLeft="@dimen/side_padding"
+        android:layout_marginRight="@dimen/side_padding"
+        android:gravity="center_horizontal"
+        android:weightSum="5.0">
+
+        <include
+            android:id="@+id/ImageView_BP1"
+            layout="@layout/card_image" />
+
+        <include
+            android:id="@+id/ImageView_BP2"
+            layout="@layout/card_image" />
+
+        <include
+            android:id="@+id/ImageView_BP3"
+            layout="@layout/card_image" />
+
+        <include
+            android:id="@+id/ImageView_BP4"
+            layout="@layout/card_image" />
+
+        <include
+            android:id="@+id/ImageView_BP5"
+            layout="@layout/card_image" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/game_deck_pile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/LinearLayout_BottomPlayer"
+        android:layout_below="@id/FrameLayout_TopPlayer"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_padding"
+        android:background="@drawable/hand_value_shape"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextView_Target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/target"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/TextView_TargetValue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/space_padding"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Button_Yaniv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_padding"
+        android:onClick="onClick"
+        android:text="@string/yaniv"
+        android:textSize="@dimen/menu_item_size"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_YanivAt"
+        android:layout_width="@dimen/top_box_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/space_padding"
+        android:background="@drawable/round_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView_YanivAt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/yaniv_at"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/TextView_YanivAtValue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/yellow"
+            android:shadowDx="-4"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Round"
+        android:layout_width="@dimen/top_box_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/space_padding"
+        android:background="@drawable/round_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView_Round"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/round"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/TextView_RoundValue"
+            style="@style/MyFont.White"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Button_Speed_Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/space_padding"
+        android:onClick="onClick"
+        android:text="@string/speed_up"
+        android:visibility="invisible" />
+
+    <SlidingDrawer
+        android:id="@+id/SlidingDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:content="@+id/LinearLayout_Scoreboard"
+        android:handle="@+id/handle">
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scores" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Scoreboard"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_grey"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/adViewGame"
+                layout="@layout/advert" />
+
+            <include
+                android:id="@+id/TableLayout_Scores"
+                layout="@layout/scoreboard" />
+        </LinearLayout>
+    </SlidingDrawer>
+
+    <ImageView
+        android:id="@+id/ImageView_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/content_description_result"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/Button_Next_Round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_padding"
+        android:onClick="onClick"
+        android:text="@string/next_round"
+        android:visibility="invisible" />
+</RelativeLayout>

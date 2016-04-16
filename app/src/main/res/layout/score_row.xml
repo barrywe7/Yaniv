@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_ScoreRow"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gridview_background"
+    android:padding="@dimen/space_padding">
+
+    <ImageView
+        android:id="@+id/ImageView_Avatar"
+        android:layout_width="@dimen/scoreboard_height"
+        android:layout_height="@dimen/scoreboard_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/avatar_shape"
+        android:contentDescription="@string/content_description_avatar"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_PlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ImageView_Avatar"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_padding">
+
+        <TextView
+            android:id="@+id/TextView_PlayerRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView_PlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_ScoreRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayout_PlayerName"
+        android:layout_toRightOf="@id/ImageView_Avatar"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_padding">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_PlayerRating"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_PlayerRatingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/space_padding"
+                android:text="@string/score_rating"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/TextView_PlayerRating"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_PlayerAchievements"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_PlayerAchievementsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/space_padding"
+                android:text="@string/score_achievements"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/TextView_PlayerAchievements"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

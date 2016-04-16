@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="@dimen/tab_height"
+    android:layout_marginLeft="@dimen/tab_margin"
+    android:layout_weight="1"
+    android:background="@drawable/tab_selector"
+    android:soundEffectsEnabled="false">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/MyTabText"
+        android:drawableTop="@drawable/score_tab_selector" />
+</RelativeLayout>

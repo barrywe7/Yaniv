@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/yellow" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/yellow" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/yellow" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/yellow" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/Scoreboard_Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/subtitle_shape"
+        android:padding="@dimen/space_padding">
+
+        <TextView
+            android:id="@+id/Header_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/Header_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/scroll_padding"
+            android:text="@string/player"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Header_Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/score"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Header_ScoreChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/change"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/yellow" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/yellow" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/yellow" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/yellow" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow_Scoreboard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/space_padding"
+        android:paddingTop="@dimen/space_padding">
+
+        <ImageView
+            android:id="@+id/imageView_Scoreboard_Avatar1"
+            android:layout_width="@dimen/scoreboard_height"
+            android:layout_height="@dimen/scoreboard_height"
+            android:layout_gravity="center"
+            android:background="@drawable/avatar_shape_scoreboard"
+            android:contentDescription="@string/content_description_avatar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_not_set" />
+
+        <TextView
+            android:id="@+id/TextView_Scoreboard_Name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/scroll_padding"
+            android:textColor="@color/yellow" />
+
+        <TextView
+            android:id="@+id/TextView_Scoreboard_Score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/yellow" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Scoreboard_ScoreChange1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView_Scoreboard_ScoreChange1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/TextView_Scoreboard_ScoreHalved1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/hand_value_shape"
+                android:gravity="center_vertical"
+                android:text="@string/halved"
+                android:textColor="@color/baize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ImageView_Happy1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:contentDescription="@string/content_description_smiley"
+                android:src="@drawable/emo_im_happy"
+                android:visibility="gone" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow_Scoreboard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/space_padding"
+        android:paddingTop="@dimen/space_padding">
+
+        <ImageView
+            android:id="@+id/imageView_Scoreboard_Avatar2"
+            android:layout_width="@dimen/scoreboard_height"
+            android:layout_height="@dimen/scoreboard_height"
+            android:background="@drawable/avatar_shape_scoreboard"
+            android:contentDescription="@string/content_description_avatar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/android" />
+
+        <TextView
+            android:id="@+id/TextView_Scoreboard_Name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/scroll_padding"
+            android:textColor="@color/yellow" />
+
+        <TextView
+            android:id="@+id/TextView_Scoreboard_Score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/yellow" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Scoreboard_ScoreChange2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView_Scoreboard_ScoreChange2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/TextView_Scoreboard_ScoreHalved2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/hand_value_shape"
+                android:gravity="center_vertical"
+                android:text="@string/halved"
+                android:textColor="@color/baize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ImageView_Happy2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:contentDescription="@string/content_description_avatar"
+                android:src="@drawable/emo_im_happy"
+                android:visibility="gone" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow_Scoreboard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/space_padding"
+        android:paddingTop="@dimen/space_padding">
+
+        <ImageView
+            android:id="@+id/imageView_Scoreboard_Avatar3"
+            android:layout_width="@dimen/scoreboard_height"
+            android:layout_height="@dimen/scoreboard_height"
+            android:background="@drawable/avatar_shape_scoreboard"
+            android:contentDescription="@string/content_description_avatar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/android" />
+
+        <TextView
+            android:id="@+id/TextView_Scoreboard_Name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/scroll_padding"
+            android:textColor="@color/yellow" />
+
+        <TextView
+            android:id="@+id/TextView_Scoreboard_Score3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/yellow" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Scoreboard_ScoreChange3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView_Scoreboard_ScoreChange3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/TextView_Scoreboard_ScoreHalved3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/hand_value_shape"
+                android:gravity="center_vertical"
+                android:text="@string/halved"
+                android:textColor="@color/baize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ImageView_Happy3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:contentDescription="@string/content_description_avatar"
+                android:src="@drawable/emo_im_happy"
+                android:visibility="gone" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow_Scoreboard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/space_padding"
+        android:paddingTop="@dimen/space_padding">
+
+        <ImageView
+            android:id="@+id/imageView_Scoreboard_Avatar4"
+            android:layout_width="@dimen/scoreboard_height"
+            android:layout_height="@dimen/scoreboard_height"
+            android:background="@drawable/avatar_shape_scoreboard"
+            android:contentDescription="@string/content_description_avatar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/android" />
+
+        <TextView
+            android:id="@+id/TextView_Scoreboard_Name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/scroll_padding"
+            android:textColor="@color/yellow" />
+
+        <TextView
+            android:id="@+id/TextView_Scoreboard_Score4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/yellow" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Scoreboard_ScoreChange4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView_Scoreboard_ScoreChange4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/TextView_Scoreboard_ScoreHalved4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/hand_value_shape"
+                android:gravity="center_vertical"
+                android:text="@string/halved"
+                android:textColor="@color/baize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ImageView_Happy4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:contentDescription="@string/content_description_smiley"
+                android:src="@drawable/emo_im_happy"
+                android:visibility="gone" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow />
+</TableLayout>

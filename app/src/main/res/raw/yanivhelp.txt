@@ -1,0 +1,124 @@
+Yaniv, also known as the Israeli game, is a game that I played numerous times whilst travelling through Latin America and Asia. There are no official rules and quite a few variations but the computer version that I've created follows the most common rules:
+
+Objectives and Scoring
+======================
+
+The objective is to have fewer than 5 points for the sum of the cards in your hand and then you can call “Yaniv” on your next turn; whereby you reveal your cards. The points are as follows:
+
+	Joker = 0
+	Ace = 1
+	2-10 = Face value
+	Jack, Queen, King = 10 points
+
+If one or more players, has equal or lower points in their hand when someone calls "Yaniv" they call "Assaf". The player with lowest points, whether it’s the caller of "Yaniv" or someone who called "Assaf" wins the round and receives zero points. If you call "Yaniv" and get Assaf’ed – you get a 30-point penalty plus the sum of your hand.
+
+After each round, a player’s points are added to their cumulative total. Once a player reaches 200 points, they are out of the game. Play continues until only 1 player remains and is the winner.
+
+If a player is lucky enough to land on an exact multiple of 50 (e.g. 50, 100, 150, 200) after their round score is added to the total; their total score is immediately halved.
+
+Dealing
+=======
+
+Each player is dealt 5 cards and the top card of the deck is turned over and becomes the first card on the discard pile.
+
+Play
+====
+
+Play progresses clockwise; beginning with the winner of the previous round to the left of the dealer.
+
+On a player’s turn they must first throw a card or set of cards onto the discard pile before picking up a new card; either from the last thrown discard set or from the deck. Since a player only ever picks up one card, by throwing a set they reduce the number of cards in their hand.
+
+A set of cards can consist of:
+
+    * 	Multiple cards of the same face value: 
+	E.g. 2, 3 or 4 of a kind.
+
+    * 	A series of at least 3 cards of the same suit.
+
+	A player can use a joker as a wild card to replace any card in the sequence that they are missing.
+
+When picking up a card from the last thrown set; a player can pick up:
+
+    * 	Any card of a kind. E.g. K♠, K♣ K♥ or K♦ can be picked up regardless of the order they were thrown.
+
+    * 	Or an extreme card from a sequence. 
+
+	E.g. if 5,6,7,8 were played then either the 5 or the 8 can be picked up. As such it is not a wise tactic to use a Joker at the extremity of a series.
+
+Bonus discard rule:
+--------------------------------
+
+When picking up a card from the deck, if it is the same kind as the card they just discarded (this does not apply if a series was thrown), then they can quickly whack this down on the discard pile before the next player’s turn without having to pick up another card. If the other player has already played their turn, this manoeuvre is not possible.
+
+Once a player has 5 or less points in their hand they can call "Yaniv" on their next go. It is not possible to call "Yaniv" within the same turn that you discarded and picked up.
+
+Tactics
+=======
+
+    * 	It is often worth discarding a lower card and picking up a higher card from the last thrown set if that would complete a set which you can drop the next go and thus reduce the amount of cards in your hand. Towards the end of the game, if you suspect that someone is about to call "Yaniv" this can be a costly error.
+
+    * 	It is not worth calling "Yaniv" if you suspect that one of the other players will "Assaf" you.
+
+    * 	Never discard a Joker at the extremity of a sequence.
+
+    * 	Play fast to prevent the bonus discard rule.
+
+Rating
+======
+
+In order to encourage competition between players a Rating system has been implemented that aims to rank each player based on how well they perform in each game. This is implemented by the following algorithm:
+
+Each player is given an initial rating of 1000.
+
+When you lose a game, points are deducted as follows:
+
+The difference between your score and the scores of all the other players divided by (the number of players in the game - the number of players still in). Your rating cannot go beneath zero points.
+
+E.g. if you go out with 210 points and players 2, 3 and 4 are still in with 167, 180 and 155 points respectively then the following points are deducted from your rating:
+
+((210 minus 167) + (210 minus 180) + (210 minus 155))/ (4 minus 3) =
+43 + 30 + 55 / 1 = 128
+
+When a player is eliminated, points are added as follows:
+
+The difference between your score and the score of the player that just went out divided by the number of players still in.
+
+E.g. if player 4 goes out with 210 points, players 2 and 3 are still in and you have 125 points:
+
+(210 minus 125) / 3 = 
+85 / 3 = 28
+
+In order to prevent players from quitting games that they are losing so that they protect their rating, a penalty is applied when you start a new game. This is based on the assumption that you have gone out of the game with 201 points and then the algorithm for points deducted is applied. This is only enforced up to a maximum of 200 points and does not apply before the end of the first round of a game.
+
+E.g. if players 2, 3 and 4 have the scores 107, 153 and 190 and you decide to quit the game and start a new one, the penalty is applied as follows:
+
+(201 minus 107) + (201 minus 153) + (201 minus 190) / (4 minus 3) =
+94 + 48 + 11 = 153
+
+Avatar
+======
+
+You can use either your camera or a file on your device for your avatar. To take a photo press the avatar button briefly in the Settings screen; to use an existing file, press and hold the avatar button in the Settings screen.
+
+SUPPORT INFORMATION
+===================
+
+"Yaniv" was developed by Barry Irvine
+
+Playing card images created by Jesse Fuchs and Tom Hart from free SVG images created by David Bellot.
+http://www.eludication.org/playingcards.html
+
+Deck of cards icon by GoSco.
+
+Help icon by Jojo (http://www.deleket.com)
+Email icon by Zige Zhao (http://www.ineversay.com)
+Unknown person folder icon by Saki (Alexander Moore) http://sa-ki.deviantart.com
+Unknown person icon by Oxygen Icons http://www.oxygen-icons.org/
+Circular Facebook icon by BlogPerfume.com (http://www.blogperfume.com)
+
+Ta-da sound effect by Mike Koenig (http://soundbible.com)
+Click sound effect by Sebastian (http://soundbible.com)
+
+Email: yaniv.bazsoft@gmail.com
+COPYRIGHT ©2011, Barry Irvine 
+All rights reserved.

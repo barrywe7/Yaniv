@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTheme" parent="android:style/Theme.NoTitleBar">
+        <item name="android:textViewStyle">@style/MyFont</item>
+        <item name="android:editTextStyle">@style/MyEditText</item>
+        <item name="android:buttonStyle">@style/MyButton</item>
+        <item name="android:spinnerItemStyle">@style/MySpinnerText</item>
+        <item name="android:spinnerDropDownItemStyle">@style/MySpinnerDropDownItemText</item>
+        <item name="android:checkboxStyle">@style/MyCheckBox</item>
+        <item name="android:windowTitleStyle">@style/MyDialogTitleStyle</item>
+        <item name="android:windowBackground">@drawable/parchment</item>
+    </style>
+
+    <style name="MyTheme.Black">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="MyTheme.Yellow">
+        <item name="android:background">@color/yellow</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/MyDialogTitleStyle</item>
+    </style>
+
+    <style name="MyCustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

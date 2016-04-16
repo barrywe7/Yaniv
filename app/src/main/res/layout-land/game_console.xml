@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout_Console"
+    android:layout_width="@dimen/console_width"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/Button_New_Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:text="@string/menu_item_new_game"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextView_Console"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="left"
+        android:inputType="none"
+        android:maxWidth="400dp"
+        android:textColor="@android:color/secondary_text_dark_nodisable"
+        android:textSize="@dimen/console_text_size" />
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyEditText" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/standard_text_size</item>
+    </style>
+
+    <style name="MyFont" parent="@android:style/TextAppearance">
+        <item name="android:typeface">sans</item>
+        <item name="android:lineSpacingMultiplier">1.0</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:textSize">@dimen/standard_text_size</item>
+    </style>
+
+    <style name="MyFont.Green">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/baize</item>
+        <item name="android:shadowColor">@color/yellow</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">-3</item>
+        <item name="android:shadowDy">2</item>
+    </style>
+
+    <style name="MyFont.White">
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">-4</item>
+        <item name="android:shadowDy">2</item>
+    </style>
+
+    <style name="MyFont.Yellow">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="MyFont.Black">
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">-4</item>
+        <item name="android:shadowDy">2</item>
+    </style>
+
+    <style name="MySpinnerText" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/standard_text_size</item>
+    </style>
+
+    <style name="MySpinnerDropDownItemText" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/standard_text_size</item>
+    </style>
+
+    <style name="MyTabText" parent="@style/MyFont.Black">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="MyMenuItem" parent="@style/MyFont.Green">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/menu_item_size</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+
+    <style name="MyTitle" parent="@style/MyFont.White">
+        <item name="android:background">@drawable/title_shape</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MyButtonHint" parent="@style/MyFont.White">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MySubTitle" parent="@style/MyFont.Yellow">
+        <item name="android:background">@drawable/subtitle_shape</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/scroll_padding</item>
+    </style>
+
+    <style name="MyDialogTitle" parent="@style/MyFont.White">
+        <item name="android:textSize">@dimen/menu_item_size</item>
+    </style>
+
+    <style name="MyVersion" parent="@style/MyFont.White">
+        <item name="android:background">@drawable/title_shape</item>
+        <item name="android:textSize">@dimen/version_size</item>
+        <item name="android:lineSpacingExtra">@dimen/version_spacing</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyButton" parent="@android:style/Widget.Button">
+        <item name="android:maxWidth">@dimen/button_size</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/baize</item>
+        <item name="android:shadowColor">@color/yellow</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">-3</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:textSize">@dimen/standard_text_size</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/standard_text_size</item>
+    </style>
+
+    <style name="MyDialogTitleStyle" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="@android:textColor">@android:color/white</item>
+        <item name="@android:textStyle">bold</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">-5</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/menu_item_size</item>
+        <item name="android:background">@drawable/title_shape</item>
+    </style>
+
+    <style name="MyLine" parent="@android:style/Widget.TextView">
+        <item name="@android:layout_width">fill_parent</item>
+        <item name="@android:layout_height">1px</item>
+        <item name="@android:background">@color/yellow</item>
+    </style>
+</resources>

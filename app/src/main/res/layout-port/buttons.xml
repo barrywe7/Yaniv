@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout_Buttons"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:id="@+id/TableRow_Buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageView_Star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_rating"
+            android:onClick="onClick"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/ImageView_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_email"
+            android:onClick="onClick"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/email" />
+
+        <ImageView
+            android:id="@+id/ImageView_Help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_help"
+            android:onClick="onClick"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/help" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow_ButtonLabels"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView_RateMeTitle"
+            style="@style/MyButtonHint"
+            android:text="@string/rate_yaniv" />
+
+        <TextView
+            android:id="@+id/TextView_EmailTitle"
+            style="@style/MyButtonHint"
+            android:text="@string/feedback" />
+
+        <TextView
+            android:id="@+id/TextView_HelpTitle"
+            style="@style/MyButtonHint"
+            android:text="@string/menu_item_help" />
+    </TableRow>
+</TableLayout>

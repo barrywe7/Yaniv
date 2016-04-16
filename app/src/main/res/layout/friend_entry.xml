@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/scroll_padding">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_ProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_shape"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/TextView_Progress_Message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/progress_friends"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar_Friends"
+            android:layout_width="@dimen/progress_size"
+            android:layout_height="@dimen/progress_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/scroll_padding" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TextView_Friend_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_friend_email"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/AutoCompleteTextView_Friend_Email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:dropDownHeight="@dimen/email_dropdown"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:maxLines="1" />
+
+    <ScrollView
+        android:id="@+id/ScrollView_Friends"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/TableLayout_FriendList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/scroll_padding"
+            android:stretchColumns="1,3">
+
+            <TableRow
+                android:id="@+id/TableRow_FriendsHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextView_Header_Friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:gravity="center"
+                    android:text="@string/friends"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextView_Header_Followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:gravity="center"
+                    android:text="@string/followers"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
+

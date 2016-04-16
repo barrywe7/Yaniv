@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yaniv</string>
+    <string name="app_version_info">1.7.3</string>
+    <string name="game_url">https://market.android.com/details?id=com.bazsoft.yaniv</string>
+    <string name="market_url">market://details?id=com.bazsoft.yaniv</string>
+    <string name="title">YANIV</string>
+    <string name="yaniv">YANIV!!</string>
+    <string name="yaniv_at">Yaniv op</string>
+    <!-- Menu section -->
+    <string name="menu_item_achievements">Prestaties</string>
+    <string name="menu_item_new_game">Nieuw Spel</string>
+    <string name="menu_item_resume">Hervat Spel</string>
+    <string name="menu_item_settings">Instellingen</string>
+    <string name="menu_item_tutorial">Uitleg</string>
+    <string name="menu_item_reset_achievements">Reset Prestaties</string>
+    <string name="menu_item_reset_rating">Reset Rating</string>
+    <string name="menu_item_help">Help</string>
+    <string name="copyright_info">Versie %s\nCopyright © 2011/2 Barry Irvine. Alle rechten voorbehouden."</string>
+    <string name="settings">Instellingen</string>
+    <string name="settings_name">Naam:</string>
+    <string name="settings_email">Email:</string>
+    <string name="settings_num_players">Aantal spelers:</string>
+    <string name="settings_hint_name">Uw naam</string>
+    <string name="settings_friend_email_label">Vrienden:</string>
+    <string name="settings_language">Taal: </string>
+    <string name="settings_publish">Opties Voor Delen</string>
+    <string name="settings_checkbox_facebook">Deel prestaties op Facebook</string>
+    <string name="settings_checkbox_heyzap">Deel prestaties en scores met Heyzap</string>
+    <string name="settings_button_friend_email">Nieuwe Vriend</string>
+    <string name="settings_friend_email_tip">Voeg een nieuwe vriend toe via email</string>
+    <string name="settings_friend_email">Voer emailadres van een vriend in:</string>
+    <string name="settings_computer_speed">Computersnelheid:</string>
+    <string name="settings_personal_details">Persoonlijke Gegevens</string>
+    <string name="settings_general_settings">Algemene Instellingen</string>
+    <string name="settings_yaniv_minimum">Minimum aantal punten voor het roepen van Yaniv:</string>
+    <string name="settings_game_options">Spel Opties</string>
+    <string name="settings_volume">Geluidsopties:</string>
+    <string name="settings_slow">TRAAG</string>
+    <string name="settings_fast">SNEL</string>
+    <!-- For selecting the number of players -->
+    <string name="players_four">Vier</string>
+    <string name="players_three">Drie</string>
+    <string name="players_two">Twee</string>
+    <string name="achievements">Prestaties</string>
+    <string name="speed_up">Versnel</string>
+    <string name="scores">Scores</string>
+    <string name="next_round">Volgende Ronde</string>
+    <string name="all_scores">Alle Scores</string>
+    <string name="friends_scores">Scores van Vrienden</string>
+    <string name="friends">Vrienden</string>
+    <string name="followers">Volgers</string>
+    <string name="hand">Waarde:</string>
+    <string name="target">Doel:</string>
+    <string name="no_scores">Geen scores.</string>
+    <string name="exit_using_back_warning">Druk nog een keer op terug om uit te gaan</string>
+    <string name="player">Speler</string>
+    <string name="score">Punten</string>
+    <string name="round">Rond</string>
+    <string name="settings_avatar_prompt_camera">Maak een foto te gebruiken als uw avatar!</string>
+    <string name="settings_avatar_prompt_gallery">Kies een image te gebruiken als uw avatar!</string>
+    <string name="change">Wijziging</string>
+    <string name="rating">Rating</string>
+    <string name="achievements_played">Gespeeld</string>
+    <string name="achievements_won">Winst</string>
+    <!-- Should be gewonnen -->
+    <string name="score_rating">Rating:</string>
+    <string name="score_achievements">Prestaties:</string>
+    <string name="privacy_button">Privacy Beleid (Engels)</string>
+    <string name="email_add_friend">Hoi,\n\nIk probeerde je als een vriend in Yaniv te toevoegen, een geweldig spel die ik speel op mijn Android maar ik kon je niet vinden.\n\Of je hebt een oude versie (minder dan 1.5), je hebt geen email ingevoerd of je hebt een andere email adres gebruikt. Kun je mij laten weten welk emailadres je gebruikt hebt?\n\nAls je het nog niet geinstalleerd hebt kan je het spel vinden op https://market.android.com/details?id=com.bazsoft.yaniv.\n\nDank je wel</string>
+    <string name="rate_yaniv">Rate Yaniv</string>
+    <string name="feedback">Feedback</string>
+    <!-- Various alert dialog titles -->
+    <string name="alert_title_invalid_card">Verkeerde kaart</string>
+    <string name="alert_title_invalid_cards">Verkeerde kaarten</string>
+    <string name="alert_title_call_yaniv">Roep Yaniv</string>
+    <string name="alert_title_out">U bent UIT!</string>
+    <string name="alert_title_invalid_pile_card">Verkeerde stapel kaart</string>
+    <string name="alert_title_winner">Gefeliciteerd! U heeft gewonnen.</string>
+    <string name="alert_title_wrong_turn">Verkeerde beurt</string>
+    <string name="alert_title_achievement">U heeft een prestatie gewonnen</string>
+    <string name="alert_title_reset_achievements">Reset Prestaties</string>
+    <string name="alert_title_language">Kies Taal</string>
+    <string name="alert_title_new_game">Nieuw Spel</string>
+    <string name="alert_title_players_out">Speler(s) uit</string>
+    <string name="alert_title_reset_rating">Reset Rating</string>
+    <string name="alert_title_send_email">Stuur Email</string>
+    <!-- Various alert dialog messages -->
+    <string name="alert_achievement">U heeft de %s prestatie gewonnen!</string>
+    <string name="alert_invalid_cards">Graag een straat met 3 of meer opeenvolgende kaarten van dezelfde soort of 1 t/m 4 kaarten van dezelfde waarde selecteren.</string>
+    <string name="alert_pickup_from_deck">Graag van het dek opnemen zoals gevraagd.</string>
+    <string name="alert_pickup_from_pile">Graag van de stapel opnemen zoals gevraagd.</string>
+    <string name="alert_call_yaniv">Graag op het Yaniv knopje drukken zoals gevraagd.</string>
+    <string name="alert_new_game">Als u nu uw bestaande spel quitten wordt %d punten van uw rating afgetrokken. Weet u zeker dat u verder wilt gaan?</string>
+    <string name="alert_quick_hands_too_many">U mag slechts de ENE kaart dat u net van het dek heeft opgehaald laten vallen.</string>
+    <string name="alert_quick_hands_wrong_card">U mag slechts de laatste kaart die u net van het dek heeft opgehaald laten vallen.</string>
+    <string name="alert_invalid_pile_card">U mag slechts kaarten van de buitenste kaarten van een straat ophalen.</string>
+    <string name="alert_reset_achievements">Hiermee verwijdert u al uw bestaande prestaties. Weet u zeker dat u verder wilt gaan?</string>
+    <string name="alert_reset_rating">Dit zal uw rating resetten en uw gespeelde en gewonnen statistieken verwijderen. Weet u zeker dat u verder wilt gaan?</string>
+    <string name="alert_tutorial_wrong_pile_card" formatted="false">Graag %s selecteren en haal %s op zoals gevraagd.</string>
+    <string name="alert_tutorial_wrong_deck_card">Graag %s selecteren en dan op het dek klikken.</string>
+    <string name="alert_deduct" formatted="false">%d punten afgetrokken van uw rating. U heeft nu een rating van %d.</string>
+    <string name="alert_add" formatted="false">%d punten zijn toegevoed aan uw rating. U heeft nu een rating van %d.</string>
+    <string name="alert_send_email">Er is niemand in de database met een emailadres van %s. Of ze Yaniv niet hebben geinstalleerd, ze hebben een oude versie daarvan, of ze hebben hun emailadres niet toegevoegd. Wilt u een email aan hen sturen?</string>
+    <string name="facebook_post">heeft de %s prestatie in Yaniv gewonnen - een zeer verslavend kaartspelletje voor Android toestellen.</string>
+    <string name="progress_friend_request">Vrienden aan het bijwerken…</string>
+    <string name="progress_friends">Bestaande vrienden aan het ophalen…</string>
+    <string name="heyzap_achievement">Ik heb net de %s prestatie in Yaniv gewonnen - gratis op Android!</string>
+    <string name="heyzap_rating">Ik heb net een rating van %d in Yaniv gekregen - gratis op Android!</string>
+    <string name="alert_wrong_turn">U bent niet aan de beurt.</string>
+    <string name="tutorial_01">Laten we eerst naar de verschillende schermelementen kijken.</string>
+    <string name="tutorial_07">Uw doel is om uw kaartwaarden naar VIJF of minder punten te brengen. Joker=0; Aas=1; J,Q,K(B,V,H)=10; andere kaarten=nominale waarde. Bijv. uw kaarten hebben een waarde van 39 punten; uw tegenstander heeft 28.</string>
+    <string name="tutorial_08">U kunt meerdere kaarten tegelijk laten vallen als ze van dezelfde waarden zijn of een straat van drie of meer kaarten van dezelfde soort. U kunt ook een joker gebruiken ipv een missende kaart in een straat.</string>
+    <string name="tutorial_09">In dit geval zijn uw hoogste waarden kaarten de 2 Boeren (J). U kunt ze ruilen voor een zichtbare kaart op de stapel of een onbekende kaart van het dek.</string>
+    <string name="tutorial_10">De 7 op de stapel is niet echt nuttig hier: u heeft geen zevens waarbij u de volgende beurt een paar kunt maken en het helpt niet om een straat te maken.</string>
+    <string name="tutorial_11">Graag op beide Boeren (J) klikken en vervolgens op het dek klikken.</string>
+    <string name="tutorial_13">Nu is de computer aan de beurt. De twee Boeren die u net heeft laten vallen zijn voor hem niet nuttig. Dus zal hij de twee Heren (K) laten vallen en ook van het dek ophalen.</string>
+    <string name="tutorial_15">U kunt misschien uw 8♥ en 10♥ houden in de hoop dat u of 9♥ of een Joker ophaalt maar dat lijkt onwaarschijnlijk. Laten we de 10♥ laten vallen en ophalen van het dek.</string>
+    <string name="tutorial_17">Wat een geluk! U heeft nog een 10 opgehaald van het dek. U mag hem snel op de stapel laten vallen voordat de volgende speler aan de beurt is.</string>
+    <string name="tutorial_19">De computer is weer aan de beurt. Hij kon de twee 4\'s spelen maar de 4, Joker en 6 zijn meer punten waard.</string>
+    <string name="tutorial_21">U mag alleen maar de buitenste kaarten van een straat ophalen dus de Joker is niet verkrijgbaar. De 6 ziet er nuttig uit: dan kunt u de volgende beurt twee 6-en laten vallen. Laat de 8 vallen en de 6 ophalen.</string>
+    <string name="tutorial_23">De computer zal zijn hoogste kaart (de Vrouw (Q)) spelen en van het dek ophalen.</string>
+    <string name="tutorial_25">Nu de 6-en laten vallen en van het dek ophalen.</string>
+    <string name="tutorial_27">Het is u gelukt! U heeft nu minder dan VIJF punten. Maar eerst moeten alle andere spelers hun beurt voltooien. De computer zal de 5 latenvallen en van het dek ophalen.</string>
+    <string name="tutorial_29">Druk nu op het Yaniv knopje om Yaniv te roepen. In dit geval kunnen we de computer z\'n kaarten zien maar als hij hetzelfde aantal punten of minder heeft dan u zult u het rondje verliezen en een straf van 30 punten krijgen. Het is dus altijd een gok om Yaniv te roepen.</string>
+    <string name="tutorial_31">Hier eindigt de uitleg. Een normaal spel gaat door totdat maar een speler over is. Een speler is uit als hij 200 punten of meer heeft. U bent nu afgestudeerd van Yaniv school. Ik hoop dat u van het spel geniet.</string>
+    <string name="tutorial_toast_2">Dit zijn uw kaarten.</string>
+    <string name="tutorial_toast_3">Dit zijn uw tegenstander z\'n kaarten. Normaliter kunt u zijn kaarten niet zien.</string>
+    <string name="tutorial_toast_4">Dit is het dek waar alle overblijvende kaarten zitten.</string>
+    <string name="tutorial_toast_5">Dit is de gooi stapel waar spelers hun kaarten laten vallen.</string>
+    <string name="tutorial_toast_6">En dit is het kompas. Het wijst op de speler die aan de beurt is.</string>
+    <string name="content_description_card">Spelkaart</string>
+    <string name="content_description_avatar">Image voor een spelers avatar</string>
+    <string name="content_description_compass">Kompas die laatzien wie aan de beurt</string>
+    <string name="content_description_yaniv">Image van het woord Yaniv</string>
+    <string name="content_description_result">Image met resultaat van een rond - Assaf of Yaniv</string>
+    <string name="content_description_trophy">Trofie</string>
+    <string name="content_description_rating">Waardeer Yaniv op de Android markt</string>
+    <string name="content_description_email">Stuur een email aan de ontwikkelaar</string>
+    <string name="content_description_expander">Opent een nieuwe window</string>
+    <string name="content_description_help">Laat de Yaniv help scherm zien</string>
+    <string name="content_description_smiley">Het winnaar van de vorige rond</string>
+    <string name="five">5</string>
+    <string name="seven">7</string>
+    <string name="halved">Gehalfd</string>
+    <string name="heyzap_checkin">Ik ben net ingecheckt in Yaniv, gratis voor Android. Kom even zelfs inzien hoe leuk het is.</string>
+    <string name="privacy_title">Yaniv Privacy Beleid</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:minWidth="@dimen/dialog_width"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/MyDialogTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_title_shape"
+        android:drawableLeft="@drawable/icon"
+        android:drawablePadding="@dimen/scroll_padding"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/space_padding"
+        android:paddingLeft="@dimen/scroll_padding"
+        android:paddingRight="@dimen/scroll_padding"
+        android:paddingTop="@dimen/space_padding" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/dark_grey"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/MyFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/scroll_padding"
+            android:layout_marginLeft="@dimen/space_padding"
+            android:layout_marginRight="@dimen/space_padding"
+            android:layout_marginTop="@dimen/scroll_padding" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_button_panel_size"
+        android:layout_gravity="center_vertical"
+        android:background="@color/light_grey"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_padding"
+        android:paddingLeft="@dimen/scroll_padding"
+        android:paddingRight="@dimen/space_padding"
+        android:paddingTop="@dimen/space_padding">
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/space_padding"
+            android:layout_weight="1.0"
+            android:text="@android:string/yes" />
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/space_padding"
+            android:layout_weight="1.0"
+            android:text="@android:string/no" />
+
+        <Button
+            android:id="@+id/neutralButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/space_padding"
+            android:layout_weight="1.0"
+            android:text="@android:string/ok" />
+    </LinearLayout>
+</LinearLayout>

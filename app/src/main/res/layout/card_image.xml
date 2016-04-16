@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.0"
+    android:adjustViewBounds="true"
+    android:contentDescription="@string/content_description_card"
+    android:cropToPadding="false"
+    android:maxHeight="@dimen/card_height"
+    android:onClick="onClick"
+    android:paddingBottom="@dimen/space_padding"
+    android:paddingLeft="@dimen/space_padding"
+    android:paddingRight="@dimen/space_padding"
+    android:paddingTop="@dimen/scroll_padding"
+    android:soundEffectsEnabled="false"
+    android:src="@drawable/card_b" />
